@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'ModuleBuildingError_Example' do
+  pod 'ModuleBuildingError', :path => '../'
+
+  target 'ModuleBuildingError_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
