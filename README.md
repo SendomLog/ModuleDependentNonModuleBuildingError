@@ -7,6 +7,10 @@
 
 ## Example
 
+resolve the error : Declaration of 'SomeClass' must be imported from module 'SomeModule.SomeClass' before it is required
+
+see: example/ModuleBuildingError/SDZViewController.m
+
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
