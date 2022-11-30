@@ -1,10 +1,11 @@
-use_frameworks!
+#use_frameworks!
 
 platform :ios, '10.0'
 
 target 'ModuleBuildingError_Example' do
   pod 'ModuleBuildingError', :path => '../'
-
+  pod 'Masonry', :modular_headers => true
+  
   target 'ModuleBuildingError_Tests' do
     inherit! :search_paths
 

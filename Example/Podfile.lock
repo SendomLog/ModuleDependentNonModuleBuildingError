@@ -1,0 +1,24 @@
+PODS:
+  - Masonry (1.1.0)
+  - ModuleBuildingError (0.1.0):
+    - Masonry
+
+DEPENDENCIES:
+  - Masonry
+  - ModuleBuildingError (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+
+EXTERNAL SOURCES:
+  ModuleBuildingError:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  ModuleBuildingError: 2bbedf357642fc728e3296ebaca10f8e989547e9
+
+PODFILE CHECKSUM: 523b682cdc0cc44c2bacf1586b2a04211db7d144
+
+COCOAPODS: 1.11.3

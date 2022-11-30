@@ -24,13 +24,15 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/zhangqian/ModuleBuildingError'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'zhangqian' => 'zhangqian@jlife.vip' }
-  s.source           = { :git => 'https://github.com/zhangqian/ModuleBuildingError.git', :tag => s.version.to_s }
+  s.author           = { 'sdz' => 'ios_support@126.com' }
+  s.source           = { :git => 'https://github.com/SendomLog/ModuleDependentNonModuleBuildingError.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'ModuleBuildingError/Classes/**/*'
+  
+  s.pod_target_xcconfig = {'DEFINES_MODULE' => 'YES', 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'}
   
   # s.resource_bundles = {
   #   'ModuleBuildingError' => ['ModuleBuildingError/Assets/*.png']
@@ -39,4 +41,7 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  
+  s.dependency 'Masonry'
+  
 end
